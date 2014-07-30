@@ -1,0 +1,5 @@
+2014-07-29 23:51:55 [ main:0 ] - [ DEBUG ] 开始
+2014-07-29 23:51:55 [ main:0 ] - [ DEBUG ] 结束
+2014-07-29 23:51:55 [ main:0 ] - [ DEBUG ] This is debug message.
+2014-07-29 23:51:55 [ main:0 ] - [ INFO ] This is info message.
+2014-07-29 23:51:55 [ main:1 ] - [ ERROR ] This is error message.
