@@ -1,0 +1,15 @@
+2014-07-30 14:17:25 [ main:0 ] - [ DEBUG ] 开始
+2014-07-30 14:17:25 [ main:0 ] - [ DEBUG ] 结束
+2014-07-30 14:17:25 [ main:1 ] - [ DEBUG ] This is debug message.
+2014-07-30 14:17:25 [ main:1 ] - [ INFO ] This is info message.
+2014-07-30 14:17:25 [ main:1 ] - [ ERROR ] This is error message.
+2014-07-30 14:17:28 [ main:0 ] - [ DEBUG ] 开始
+2014-07-30 14:17:28 [ main:0 ] - [ DEBUG ] 结束
+2014-07-30 14:17:28 [ main:0 ] - [ DEBUG ] This is debug message.
+2014-07-30 14:17:28 [ main:0 ] - [ INFO ] This is info message.
+2014-07-30 14:17:28 [ main:1 ] - [ ERROR ] This is error message.
+2014-07-30 14:17:36 [ main:0 ] - [ DEBUG ] 开始
+2014-07-30 14:17:36 [ main:0 ] - [ DEBUG ] 结束
+2014-07-30 14:17:36 [ main:0 ] - [ DEBUG ] This is debug message.
+2014-07-30 14:17:36 [ main:0 ] - [ INFO ] This is info message.
+2014-07-30 14:17:36 [ main:0 ] - [ ERROR ] This is error message.

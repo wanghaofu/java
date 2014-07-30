@@ -1,5 +1,6 @@
-package com.madhouse.app;
-//redis 需要的包
+package com.madhouse.app; //redis 需要的包
+import com.madhouse.app.lib.*;
+import java.io.*;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.SortingParams;
@@ -17,15 +18,18 @@ public class App
         MutliThread m2=new MutliThread("Window 2");
         m1.start();
         m2.start();
-
-        file ifile= new file();
+        try{
+        Afile ifile= new Afile();
         ifile.initLogDir();
-       
+        ifile.writeBytes( "80000006|800007|3|2|hello|\n"); 
+        }catch (IOException e){
+            System.out.println("file error"+ e);
+        }
         Log log= new Log();
         
         log.write();
 
-        mysql imysql = new mysql();
+        Mysql imysql = new Mysql();
         imysql.conn();
         redis();
         mysql();
