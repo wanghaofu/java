@@ -18,6 +18,9 @@ public class App
         m1.start();
         m2.start();
 
+        file ifile= new file();
+        ifile.initLogDir();
+       
         Log log= new Log();
         
         log.write();
