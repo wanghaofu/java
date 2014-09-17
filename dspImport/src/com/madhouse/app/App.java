@@ -1,5 +1,4 @@
-package com.madhouse.app; //redis需要的包
-
+package com.madhouse.app;
 import com.madhouse.app.lib.*;
 import java.io.*;
 import redis.clients.jedis.Jedis;
@@ -10,8 +9,7 @@ import java.sql.*;
 
 //import java.util.HashMap;
 /**
- * Hello world!
- *
+ *  *
  */
 public class App 
 {
@@ -39,7 +37,7 @@ public class App
     }
     public static void redis()
     {
-        Jedis jedis =new Jedis("127.0.0.1");
+        Jedis jedis =new Jedis("192.168.2.9");
         String keys="name";
         jedis.del(keys);
         jedis.set(keys,"snowolf");
