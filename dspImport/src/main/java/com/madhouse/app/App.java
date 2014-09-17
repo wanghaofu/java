@@ -1,4 +1,5 @@
-package com.madhouse.app; //redis 需要的包
+package com.madhouse.app; //redis需要的包
+
 import com.madhouse.app.lib.*;
 import java.io.*;
 import redis.clients.jedis.Jedis;
@@ -6,6 +7,8 @@ import redis.clients.jedis.Pipeline;
 import redis.clients.jedis.SortingParams;
 //mysql需要倒入的包
 import java.sql.*;
+
+//import java.util.HashMap;
 /**
  * Hello world!
  *
@@ -44,6 +47,11 @@ public class App
         System.out.println(value);
         System.out.println( "Hello World!" );
 
+    }
+
+    public static void mapString()
+    {
+    	
     }
     public static void mysql()
     {
