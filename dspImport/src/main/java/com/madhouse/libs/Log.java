@@ -1,4 +1,4 @@
-package com.madhouse.app.lib;
+package com.madhouse.libs;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
@@ -11,17 +11,17 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
+import org.apache.log4j.BasicConfigurator; 
 import org.apache.log4j.Logger;
 
 public class Log
 {
+	//参数为此类类名
     static Logger logger =Logger.getLogger(Log.class);
 
     public Log()
     {
-
- 
-        //         BasicConfigurator.configure();// 自动快速地使用缺省Log4j环境。
+       BasicConfigurator.configure();// 自动快速地使用缺省Log4j环境。
         //    PropertyConfigurator.configure ( String configFilename) ：读取使用Java的特性文件编写的配置文件。
     }
 

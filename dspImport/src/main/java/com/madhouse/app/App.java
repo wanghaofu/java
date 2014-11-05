@@ -1,5 +1,14 @@
+/* file name  : App.java
+ * authors    : Tony king (tony@madhouse-inc.com)
+ * created    : 三  9/17 18:03:33 2014
+ * copyright  : 
+ *
+ * modifications:
+ *
+ */
 package com.madhouse.app;
-import com.madhouse.app.lib.*;
+import com.madhouse.libs.*;
+import com.madhouse.app.model.*;
 import java.io.*;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Pipeline;
@@ -19,21 +28,23 @@ public class App
         MutliThread m2=new MutliThread("Window 2");
         m1.start();
         m2.start();
-        try{
-        Afile ifile= new Afile();
-        ifile.initLogDir();
-        ifile.writeBytes( "80000006|800007|3|2|hello|\n"); 
-        }catch (IOException e){
-            System.out.println("file error"+ e);
-        }
+     //   try{
+     
+    
         Log log= new Log();
         
-        log.write();
+       log.write();
 
-        Mysql imysql = new Mysql();
+    
+      
+      // iconf.readProperties();
+        
+       Mysql imysql = new Mysql();
         imysql.conn();
-        redis();
-        mysql();
+       redis();
+      // mysql();
+      //  ImportData importdata = new ImportData();
+      //  importdata.counter();
     }
     public static void redis()
     {

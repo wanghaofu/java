@@ -6,7 +6,7 @@
  * modifications:
  *
  */
-package com.madhouse.app.lib;
+package com.madhouse.libs;
 
 public class  Mysql
 {
